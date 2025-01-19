@@ -1,8 +1,42 @@
-# React + Vite
+# react-multizone-digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React component for displaying a customizable digital clock with support for multiple time zones.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Display digital clocks for multiple time zones.
+- Simple and intuitive to use.
+
+## Installation
+
+Clone the repo and install the packages
+
+```bash
+npm install
+```
+
+## Usage
+
+Here's how you can use the `DigitalClock` component in your React application:
+
+### Example
+
+```jsx
+function App() {
+  return (
+    <div>
+      <DigitalClock title="London" timeZone="Europe/London" />
+      <DigitalClock title="New York" timeZone="America/New_York" />
+    </div>
+  );
+}
+```
+
+## Props
+
+The `DigitalClock` component accepts the following props:
+
+| Prop       | Type     | Default  | Description                           |
+| ---------- | -------- | -------- | ------------------------------------- |
+| `title`    | `string` |          | The title to display above the clock. |
+| `timeZone` | `string` | Required | The IANA time zone string.            |

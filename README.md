@@ -1,6 +1,10 @@
-# react-multizone-digital
+# Multizone Digital Clock - a React component
 
 A React component for displaying a customizable digital clock with support for multiple time zones.
+
+## Demo
+
+![Demo](./demo.jpg)
 
 ## Features
 

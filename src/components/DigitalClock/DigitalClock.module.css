@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Digital-7";
+  src: url("/src/assets/fonts/digital-7.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.digitalClock {
+  box-sizing: border-box;
+  font-family: "Digital-7", sans-serif;
+  text-shadow: rgba(255, 255, 255, 0.8) 0px 0px 15px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  padding: 1rem;
+}
+
+.title {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: left;
+  align-items: end;
+}
+
+.clockContent {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 1.2rem;
+}
+
+.days {
+  color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  text-shadow: none;
+  font-size: 0.75rem;
+}
+
+.time {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  font-size: 8rem;
+}
+
+.active {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: rgba(255, 255, 255, 0.8) 0px 0px 15px;
+}
+
+.hidden {
+  visibility: hidden;
+}
